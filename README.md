@@ -26,60 +26,61 @@ This program require a Python 3.11.5 version.
 ### Clone Repository
 To clone the repository, run the following command:
 
-`git clone https://github.com/cgbaboua/Sleep_States_Detection.git`
+`git clone https://github.com/cgbaboua/AIAO_Sujet2.git`
+
+## Clone the competition repository
+
+To access the raw data and run the scripts, visit the [Kaggle - Child Mind Institute Competition](https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/data) to download the data.
+
+Alternatively, you can use the following command:
+`kaggle competitions download -c child-mind-institute-detect-sleep-states`
+
 
 ### Repository Contents
-[Sleep_States_Detection/](https://github.com/cgbaboua/Sleep_States_Detection)
-  - [README.md](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/README.md)
-  - [Documents/](https://github.com/cgbaboua/Sleep_States_Detection/tree/main/Documents)
-    - [Presentation](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Documents/Presentation)
-    - [Report](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Documents/Report)
-  - [Python/](https://github.com/cgbaboua/Sleep_States_Detection/tree/main/Python)
-    - [Preprocessing.py](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Python/Preprocessing.py)
-    - [RNN.py](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Python/RNN.py)
-    - [CNN.py](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Python/CNN.py)
-    - [Random_Forest.py](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Python/Random_Forest.py)
-    - [Logistic_Regression.py](https://github.com/cgbaboua/Sleep_States_Detection/blob/main/Python/Logistic_Regression.py)
-  - [Results/](https://github.com/cgbaboua/Sleep_States_Detection/tree/main/Results)
+[AIAO_Sujet2/](https://github.com/cgbaboua/AIAO_Sujet2)
+  - [README.md](https://github.com/cgbaboua/AIAO_Sujet2blob/main/README.md)
+  - [Documents/](https://github.com/cgbaboua/AIAO_Sujet2/tree/main/Documents)
+    - [Presentation](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Documents/Presentation)
+    - [Report](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Documents/Report)
+  - [Python/](https://github.com/cgbaboua/AIAO_Sujet2/tree/main/Python)
+    - [preprocessing.py](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Python/preprocessing.py)
+    - [rnn_padding.py](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Python/rnn_padding.py)
+    - [lstm_windows.py](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Python/lstm_windows.py)
+    - [regression_logistique.py](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Python/regression_logistique.py)
+    -  [acp.py](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Python/acp.py)
+  - [Results/](https://github.com/cgbaboua/AIAO_Sujet2/tree/main/Results)
+     - [ACP.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/ACP.png)
+    - [ConfusionMatrix_predict.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/ConfusionMatrix_predict.png)
+    - [data_to_analyze_RNN.csv](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/data_to_analyze_RNN.csv)
+    - [Ind_Better_predict.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/Ind_Better_predict.png)
+    - [Ind_Results_1.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/Ind_Results_1.png)
+    - [RNN_2.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/RNN_2.png)
+    - [RNN_results_1.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/RNN_results_1.png)
+    - [RNN_results_2.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/RNN_results_2.png)
+    - [RNN.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/RNN.png)
 
-### Environment Setup
-à compléter avec yml 
 
 ## Getting Started
 
 ### Basic Usage
 To run the program, navigate to the Python directory and execute the following:
 
-- For Preprocessing: `python3 Preprocessing.py`
-- For RNN: `python3 RNN.py`
-- For CNN: `python3 CNN.py`
-- For Random Forest: `python3 Random_Forest.py`
-- For Logistic Regression : `python3 Logistic_Regression.py`
+- For Preprocessing: `python3 preprocessing.py`
+- For RNN: `python3 rnn_padding.py`
+- For LSTM: `python3 lstm_windows.py`
+- For Logistic Regression : `python3 regression_logistique.py`
+- For ACP : `python3 
 
-### Inputs
-
-
-a completer
-
-### Features and Functions
-List all the major features and functions in your code with a short description for each.
 
 ### Packages Used
 - `numpy`
 - `scikit-learn`
 - `tensorflow`
 - `pandas`
-- à compléter
-
-## Outputs and Examples
-
-### Example
-Run an example command:
-
-`python3 RNN.py --your_options_here`
-
-### Outputs
-The results will be saved in the `Results/` directory, containing examples of our sleep state detection outputs.
+- `Keras`
+- `seaborn`
+- `pyarrow`
+- ...
 
 
 
