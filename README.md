@@ -21,7 +21,7 @@ The work aims to enhance the reliability of large-scale sleep studies. It holds 
 This program is compatible with macOS and UNIX-based operating systems. Windows users can run this project using Windows Subsystem for Linux (WSL).
 This program require a Python 3.11.5 version.
 
-## Installation
+## Installation Guide
 
 ### Clone Repository
 To clone the repository, run the following command:
@@ -60,7 +60,7 @@ Alternatively, you can use the following command:
     - [RNN.png](https://github.com/cgbaboua/AIAO_Sujet2/blob/main/Results/RNN.png)
 
 
-## Getting Started
+## Quickstart Guide
 
 ### Basic Usage
 To run the program, navigate to the Python directory and execute the following:
@@ -69,7 +69,7 @@ To run the program, navigate to the Python directory and execute the following:
 - For RNN: `python3 rnn_padding.py`
 - For LSTM: `python3 lstm_windows.py`
 - For Logistic Regression : `python3 regression_logistique.py`
-- For ACP : `python3 
+- For ACP : `python3 acp.py`
 
 
 ### Packages Used
